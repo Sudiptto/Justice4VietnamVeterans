@@ -1,0 +1,291 @@
+
+body {
+    margin: 0;
+    color: white;
+    background-color: darkblue;
+
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ 
+  overflow: hidden;
+  background-color: rgb(1, 1, 59);
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: blue;}
+
+ul.topnav li.right {
+float: right;
+border: solid blue;
+border-width: 15px;
+border-color: navy;
+border-radius: 25px;
+
+font-size: xx-large;}
+
+ul.topnav li.right:hover{
+  background-color: darkgreen;
+  
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+/* Image slider*/
+.carousel-container {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    border:15px white ridge;
+    border-radius: 20px;
+    border-collapse: collapse;
+    
+  }
+  
+  .carousel-container:hover{
+    border:15px lightblue;
+  }
+ 
+  .carousel img {
+    width: 702px;
+    height: 500px;
+    border-radius: 10px;
+  
+  }
+
+  
+  
+  .item {
+    position: absolute;
+    display: none;
+    
+  }
+  
+  
+  
+  .main {
+    display: block;
+  }
+  
+  
+  .navigation .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 40%;
+    left: 10px;
+    font-weight: 700;
+  }
+  .navigation .next {
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 40%;
+  }
+  .navigation .nav-btn {
+    background: darkblue;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align:center;
+    padding: 5px;
+    
+  }
+  .navigation .nav-btn:hover {
+    background: white;
+  }
+
+
+  h1{
+    text-align: center;
+    font-family: 'Arbutus', cursive;
+font-family: 'Barriecito', cursive;
+font-family: 'Kolker Brush', cursive;
+font-family: 'Syne Mono', monospace;
+  }
+  h1:hover{
+    text-align: center;
+    background-position: 90% 0;
+    border-radius: 25px;
+    -o-transition: all .71s ease-in-out;
+    -webkit-transition: all .17s ease-in-out;
+    transition: all .7s ease-in-out;
+background-image: linear-gradient(to right, #fbe9f0, #f6e0d5, #f5ccdb , #f6e3c6);
+ color: navy;
+  }
+
+  ol {
+    background: navy;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  ol li:hover{
+    font-size: 40px;
+    color: white;
+    background: darkblue;
+  }
+  
+  ol li {
+    background: white;
+    color: navy;
+    padding: 5px;
+    font-size: 25px;
+    margin-left: 35px;
+  }
+
+  .imagee{
+    float: left;
+  }
+
+  .text1{
+    font-size: 35px;
+  }
+
+  .full-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: navy
+      ;
+  }
+  
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    color: black;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 60%;
+    height: 70%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  button{
+    background-color: white;
+    color: navy;
+    border-radius: 25px;
+  }
+
+  button:hover{
+    background-color: navy;
+    color: white;
+    transition: 1s;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  form{
+    text-align: center;
+    padding: 12px 20px;
+    border: 2px solid white;
+  border-radius: 4px;
+  }
+form:hover{
+  border: 2px dotted white;
+  transition: 2s;
+}
+  input{
+    width: 50%;
+    height: 8%;
+    border: solid black;
+    padding: 1%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+
+  input:hover{
+    height: 12%;
+  }
